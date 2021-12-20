@@ -3,7 +3,6 @@ import styles from '../styles/Home.module.css'
 export default function Links() {
   return (
     <div className={styles.container}>
-
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h2>Documentation &rarr;</h2>
