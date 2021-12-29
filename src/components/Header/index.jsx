@@ -1,8 +1,9 @@
+import styles from './Header.module.css'
 import Link from 'next/link'
 
 export default function Header() {
     return (
-        <header>
+        <header className={styles.headerLink}>
             <Link href="/">
                 <a>Index</a>
             </Link>

@@ -1,0 +1,7 @@
+.headerLink {
+    display: flex;
+    justify-content: center;
+    padding: 24px 0;
+    gap: 24px;
+    border-bottom: 1px solid #bbb;
+}

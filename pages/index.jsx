@@ -1,24 +1,22 @@
 import Head from 'next/head'
-import Link from 'next/Link'
+// import Link from 'next/Link'
 import styles from 'styles/Home.module.css'
 import Footer from 'src/components/Footer'
 import Main from 'src/components/Main'
 import Header from 'src/components/Header'
-import { useCallback, useEffect } from 'react'
+import { useCallback, useEffect,useState } from 'react'
 
 
 export default function Home() {
-  // const handleClick = useCallback(
-  // (e) => {
-  //   console.log(e.target.href)
-  //   e.preventDefault()
-  //   alert(foo)å
-  // }, [])
+  const [count, setCount] = useState(1)
+
+  const handleClick = (e) => {
+    setCount((count) => count + 1)
+  }
+
   useEffect(() => {
-    console.log('マウント時')
     document.body.style.backgroundColor = "lightblue"
     return () => {
-      console.log('アンマウント時')
       document.body.style.backgroundColor = ""
     }
   },[])
@@ -31,11 +29,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      {/* <Link
-        href="/about"
-        onClick={ handleClick }>
+      <h1 className={styles.topAreaUI}>{count}</h1>
+        <button onClick={ handleClick } className={styles.topAreaUI}>
           ボタン
-      </Link> */}
+        </button>
       <Main page="index"/>
       <Footer />
     </div>
