@@ -2,8 +2,14 @@
   padding: 0 2rem;
 }
 
-.topAreaUI {
+.containerTopArea {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 12px;
   margin: 12px auto;
+}
+
+.containerTopArea button {
+  width: 100px;
 }
