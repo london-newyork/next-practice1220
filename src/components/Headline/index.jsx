@@ -5,10 +5,11 @@ export default function Headline(props) {
     <div>
       <h1 className={styles.title}>{props.page} Page</h1>
       <p className={styles.description}>
-      Get started by editing{' '}
+      アイテムの数は{props.children}個です
       {props.children}
       </p>
       <button onClick={props.onClick}>ボタン</button>
+      <button onClick={ props.handleReduce }>減らす</button>
     </div>
   )
 }

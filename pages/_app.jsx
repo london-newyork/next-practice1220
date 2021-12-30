@@ -13,8 +13,8 @@ import { useInputArray } from 'src/hooks/useInputArray'
 import { useBgLightBlue } from 'src/hooks/useBgLightBlue'
 
 export default function MyApp({Component, pageProps}){
-  const { count, isShow, handleClick, handleDisplay } = useCounter()
-  const {text, array, handleChange, handleAdd } = useInputArray()
+  const counter = useCounter()
+  const inputArray = useInputArray()
   useBgLightBlue()
 
   return (
