@@ -5,8 +5,8 @@ import Main from 'src/components/Main'
 import Header from 'src/components/Header'
 
 export default function About({
-  count,
   isShow,
+  doubleCount,
   handleClick,
   handleDisplay,
   text,
@@ -24,7 +24,7 @@ export default function About({
       </Head>
       <Header />
       <div className={styles.containerTopArea}>
-        {isShow ? <h1>{count}</h1> : null}
+        {isShow ? <h2>{ doubleCount }</h2> : null}
           <button
             onClick={ handleClick }
           >
