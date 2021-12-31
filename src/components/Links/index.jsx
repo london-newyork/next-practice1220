@@ -1,11 +1,10 @@
 import styles from './Links.module.css'
 
-export default function Links({ items, handleReduce }) {
+export default function Links(props) {
 
   return (
         <div className={styles.grid}>
-            <button onClick={handleReduce}>減らす</button>
-            {items.map((item) => {
+            {props.items.map((item) => {
                 return(
                         <a key={item.id} href={item.href} className={styles.card}>
                             <h2>{item.title}</h2>

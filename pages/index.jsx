@@ -4,7 +4,7 @@ import styles from 'styles/Home.module.css'
 import Footer from 'src/components/Footer'
 import Main from 'src/components/Main'
 import Header from 'src/components/Header'
-import { useBgLightBlue } from 'src/hooks/useBgLightBlue'
+import { useBgLightBlue } from 'src/hooks/useBgColor'
 
 export default function Home(props) {
   const { count, isShow, handleClick, handleDisplay, text, array, handleChange, handleAdd } = props
